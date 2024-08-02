@@ -332,42 +332,67 @@ span {
 
 
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
+.contact {
     background: var(--snd-bf-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
+    padding: 5rem 9%;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 4rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.contact-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.contact-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.contact-box h3 {
+    font-size: 2.6rem;
+    margin: 2rem 0;
+}
+
+.contact-box p a {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact-box p a:hover {
+    text-decoration: underline;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
 }
 
 
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
 
 .footer {
     display: flex;
